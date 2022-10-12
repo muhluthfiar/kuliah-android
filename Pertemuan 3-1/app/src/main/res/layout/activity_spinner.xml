@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Spinner" >
+
+    <Spinner
+        android:id="@+id/label_spinner"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
+        android:layout_toRightOf="@id/input_thing" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label_spinner"
+        android:onClick="displayPhone"
+        android:text="Show" />
+
+    <EditText
+        android:id="@+id/input_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:text="Phone Number:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/phone_number"
+        android:text="Nothing Entered" />
+
+</RelativeLayout>

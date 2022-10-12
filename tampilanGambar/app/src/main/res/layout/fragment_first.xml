@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/choose_desserts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/choosedessert"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/froyo"
+        android:layout_marginTop="258dp"
+        android:text="@string/next" />
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="120dp"
+        android:layout_height="122dp"
+        android:layout_alignTop="@id/choose_desserts"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="37dp"
+        android:contentDescription="Donut"
+        android:onClick="showDonutOrder"
+        app:srcCompat="@drawable/donut_circle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@id/donut"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="156dp"
+        android:contentDescription="bingchilling"
+        android:onClick="showIceCreamOrder"
+        android:src="@drawable/froyo_circle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@id/ice_cream"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="155dp"
+        android:contentDescription="froyo"
+        android:onClick="showFroyoOrder"
+        android:src="@drawable/icecream_circle"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

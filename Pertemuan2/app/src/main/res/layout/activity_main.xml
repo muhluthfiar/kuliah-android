@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@android:color/holo_blue_dark"
+        android:paddingLeft="100dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="5dp"
+        android:text="Belajar Android"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/redirect_button"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:text="Halaman Selanjutnya" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="612dp"
+        android:layout_above="@+id/redirect_button"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="607dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut urna nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent egestas elit augue, at porttitor orci bibendum et. Nunc condimentum mauris eu lacus eleifend, et placerat neque interdum. Vestibulum vel tincidunt ipsum, a mollis justo. Donec auctor euismod dui vel scelerisque. Praesent imperdiet dapibus urna id volutpat. Nullam urna ex, convallis sit amet nisi non, condimentum congue lorem.  Quisque sagittis quam nec erat facilisis, eget placerat magna sagittis. Aliquam erat volutpat. Nam sit amet felis augue. Vivamus sollicitudin nec lorem in tincidunt. Ut a interdum sem, vitae pretium diam. Aliquam vulputate turpis arcu, a euismod dui tincidunt non. Cras elementum est mollis purus vehicula, sed tincidunt arcu pretium. Aliquam et facilisis nisi. Duis vitae pellentesque mauris.  In rutrum, turpis id cursus blandit, ante ex varius lacus, a vestibulum neque metus sed mauris. Nullam et eleifend neque, ut maximus orci. Ut tincidunt vitae mi sed tempus. Sed sed lobortis lectus. Praesent vel varius urna. Vivamus tempor libero leo, non congue justo auctor id. Sed ut pulvinar purus. Mauris sed accumsan metus, iaculis cursus augue. Maecenas ac purus non metus pharetra porttitor fermentum nec nisl. Sed faucibus placerat tortor fermentum bibendum. Morbi gravida diam eu massa facilisis porttitor.  Quisque vel suscipit ante, vel dictum ipsum. Morbi suscipit erat eget finibus bibendum. In quis consequat nisl. Pellentesque tristique neque id erat finibus, sit amet tempor diam vulputate. Maecenas id mi ut neque imperdiet pellentesque. In tristique est non lacus gravida, ac finibus dolor ornare. Etiam non tortor nisi. Aenean neque ipsum, porta nec imperdiet ac, auctor id sem. Nam eu nibh augue.  Duis id ornare nulla. Sed vel ornare sem, ut convallis leo. Praesent aliquam vestibulum felis, a fermentum diam facilisis et. Sed interdum, turpis non blandit imperdiet, velit erat lobortis nulla, quis euismod velit ligula eget ante. Etiam at finibus risus, vitae pulvinar leo. Proin rutrum tristique sapien, quis tempor velit pharetra sollicitudin. Sed elit turpis, accumsan et pellentesque dignissim, molestie id dolor. Phasellus in turpis mollis, facilisis ex ac, ornare tortor. Vestibulum tellus leo, elementum ac felis ut, sagittis facilisis sem. Duis tempor neque in nulla interdum, vitae feugiat mi aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam gravida nec leo sed malesuada. Duis condimentum mollis mi, non molestie ante dignissim laoreet. Morbi pretium lorem sit amet risus interdum ullamcorper. Curabitur volutpat sapien egestas mi egestas dapibus at a urna.  Donec venenatis et metus et pharetra. Praesent a turpis tortor. Suspendisse commodo diam a malesuada venenatis. Duis vel est sit amet orci rhoncus eleifend ut vitae mauris. Nunc tempor, orci id pellentesque ullamcorper, tortor felis condimentum nisl, ac auctor massa sem at lacus. Donec elementum mattis nibh eget dignissim. Vestibulum vitae blandit nulla. Nullam scelerisque ut lectus vitae sagittis. Aliquam sed mauris vitae urna consequat finibus. Aliquam erat volutpat. Donec lobortis felis non elementum ultrices. Nunc quis nisi tempus, sollicitudin sapien sed, malesuada ligula.  Nam elementum, mi quis ultrices bibendum, ante dui suscipit dolor, in pretium est enim sit amet quam. Mauris at sapien sem. Donec non volutpat tortor. Pellentesque non rhoncus urna, sed fermentum tortor. Phasellus est mauris, fermentum vitae tincidunt a, iaculis sed sapien. Praesent id neque a sem facilisis interdum. Aenean maximus nec sapien vel posuere. Maecenas id leo in lacus interdum laoreet dapibus quis erat. In vel lorem blandit, auctor enim eget, iaculis turpis. Maecenas non bibendum nisl. Sed tincidunt faucibus pharetra. Morbi maximus sapien at risus gravida pellentesque. Quisque eu mauris et leo faucibus faucibus. Integer egestas, erat eget semper mattis, justo risus pharetra enim, vitae semper erat magna vitae diam. In eu mi in sapien suscipit interdum quis sit amet dui.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras semper tellus sit amet cursus sodales. Vestibulum eu pellentesque ante, sed rhoncus lectus. Nullam eu condimentum neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dapibus sit amet nibh vitae congue. Phasellus molestie tortor laoreet metus suscipit, nec rutrum lorem hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Nunc et nisi ipsum. Nam eleifend blandit lacus a fringilla. Sed laoreet fermentum eros, sit amet posuere libero sollicitudin vel. Maecenas vitae tincidunt libero. Vivamus congue condimentum felis sit amet scelerisque. Mauris tempor ullamcorper ornare. Quisque in pellentesque risus. Morbi commodo massa ligula, sed commodo erat vestibulum vitae. Morbi id feugiat dolor.  Integer posuere consectetur est at aliquam. Mauris ac orci nisl. Ut id quam sit amet leo dignissim egestas. Duis ultricies auctor risus non blandit. Integer facilisis nisl arcu, vel pretium urna viverra sit amet. Ut ultrices pellentesque luctus. Donec ipsum dolor, venenatis vitae iaculis nec, tristique sed felis. Donec vehicula nisi vitae dolor vehicula, condimentum molestie lorem fringilla. In commodo, ante vitae bibendum ultrices, dui metus lobortis turpis, sed egestas nisl est ac orci." />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

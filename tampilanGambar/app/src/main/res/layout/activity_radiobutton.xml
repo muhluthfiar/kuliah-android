@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".radiobutton">
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Choose Delivery Method" />
+
+    <TextView
+        android:id="@+id/ordername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Your Order : " />
+
+    <RadioGroup
+        android:id="@+id/ordergroup"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:layout_alignBaseline="@id/ordername"
+        android:layout_marginTop="19dp">
+
+        <RadioButton
+            android:id="@+id/radio_sameday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Same Day Delivery" />
+
+        <RadioButton
+            android:id="@+id/radio_nextday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Next Day Delivery" />
+
+        <RadioButton
+            android:id="@+id/radio_pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Pick Up" />
+    </RadioGroup>
+</RelativeLayout>
