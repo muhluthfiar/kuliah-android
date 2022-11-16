@@ -67,14 +67,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendNotification() {
-//        NotificationCompat.Builder notifyBuilder = new NotificationCompat.Builder(this, CHANNEL_ID)
-//                .setContentTitle("You've been notified!")
-//                .setContentText("This is your notification text.")
-//                .setSmallIcon(R.drawable.ic_notify)
-//                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-//
-//        Notification myNotification = notifyBuilder.build();
-//        notifyManager.notify(NOTIFICATION_ID, myNotification);
 
         notifyButton.setEnabled(false);
         updateButton.setEnabled(true);
@@ -97,10 +89,6 @@ public class MainActivity extends AppCompatActivity {
 
             String CHANNEL_ID = "alex_channel";
 
-            // https://developer.android.com/training/notify-user/channels
-            // https://medium.com/exploring-android/exploring-android-o-notification-channels-94cd274f604c
-            // https://startandroid.ru/ru/uroki/vse-uroki-spiskom/515-urok-190-notifications-kanaly.html
-            // https://code.tutsplus.com/ru/tutorials/android-o-how-to-use-notification-channels--cms-28616
 
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "AlexChannel",
                     NotificationManager.IMPORTANCE_HIGH);
@@ -163,11 +151,6 @@ public class MainActivity extends AppCompatActivity {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
 
             String CHANNEL_ID = "alex_channel";
-
-            // https://developer.android.com/training/notify-user/channels
-            // https://medium.com/exploring-android/exploring-android-o-notification-channels-94cd274f604c
-            // https://startandroid.ru/ru/uroki/vse-uroki-spiskom/515-urok-190-notifications-kanaly.html
-            // https://code.tutsplus.com/ru/tutorials/android-o-how-to-use-notification-channels--cms-28616
 
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "AlexChannel",
                     NotificationManager.IMPORTANCE_HIGH);
