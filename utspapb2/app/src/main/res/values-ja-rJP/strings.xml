@@ -1,0 +1,16 @@
+<resources>
+    <string name="normal_map">法線マップ</string>
+    <string name="hybrid_map">ハイブリッド マップ</string>
+    <string name="terrain_map">地形図</string>
+    <string name="satellite_map">衛星地図</string>
+    <string name="widget_title">最近配置された POI 情報</string>
+    <string name="poi_name">スポット名</string>
+
+
+    <string name="appwidget_text">例</string>
+    <string name="add_widget">ウィジェットを追加</string>
+    <string name="app_widget_description">これはアプリ ウィジェットの説明です</string>
+    <string name="latitude">緯度</string>
+    <string name="longitude">経度</string>
+    <string name="refresh">Refresh</string>
+</resources>

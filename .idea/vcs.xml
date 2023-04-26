@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FragmentProject1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Sensor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TiltSensor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tugas1Fragment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UtsPrakAndroid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android-retrofit" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uasfirebase" vcs="Git" />
   </component>
 </project>

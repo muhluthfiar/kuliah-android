@@ -1,0 +1,16 @@
+<resources>
+    <string name="normal_map">Peta Biasa</string>
+    <string name="hybrid_map">Peta Hibrida</string>
+    <string name="terrain_map">Peta Medan</string>
+    <string name="satellite_map">Peta Satelit</string>
+    <string name="widget_title">Info POI yang Baru Ditempatkan</string>
+    <string name="poi_name">POI :</string>
+
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Tambah Widget</string>
+    <string name="app_widget_description">Ini adalah sebuah deskripsi app widget</string>
+    <string name="latitude">Garis Lintang :</string>
+    <string name="longitude">Garis Bujur :</string>
+    <string name="refresh">Refresh</string>
+</resources>

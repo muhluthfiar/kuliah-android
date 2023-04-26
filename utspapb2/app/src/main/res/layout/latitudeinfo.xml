@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Utspapb2.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Utspapb2.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/WidgetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/widget_title"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/POIName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WidgetTitle"
+        android:layout_marginTop="10dp"
+        android:text="@string/poi_name" />
+
+    <TextView
+        android:id="@+id/POINameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WidgetTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/POIName"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/POILatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/POIName"
+        android:layout_marginTop="10dp"
+        android:text="@string/latitude" />
+
+    <TextView
+        android:id="@+id/POILatitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/POIName"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/POILatitude"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/POILongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/POILatitude"
+        android:layout_marginTop="10dp"
+        android:text="@string/longitude" />
+
+    <TextView
+        android:id="@+id/POILongitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/POILatitude"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/POILongitude"
+        android:text="0" />
+
+
+</RelativeLayout>
