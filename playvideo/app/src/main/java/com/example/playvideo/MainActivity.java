@@ -6,13 +6,19 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
+import android.webkit.URLUtil;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final  String VIDEO_SAMPLE = "vid1";
+    // local
+    private static final  String VIDEO_SAMPLE_LOCAL = "vid1";
+    //url
+    private static final  String VIDEO_SAMPLE_LINK = "https://www.youtube.com/watch?v=434rBX_G85o";
+    private TextView bufferingTextView;
     private VideoView videoView;
 
     @Override
@@ -21,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         videoView = findViewById(R.id.video);
+        bufferingTextView = findViewById(R.id.buffering_textview);
 
         MediaController controller = new MediaController(this);
         controller.setMediaPlayer(videoView);
@@ -35,14 +42,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mediaPlayer) {
+                bufferingTextView.setVisibility(VideoView.INVISIBLE);
+                videoView.seekTo(1);
+                videoView.start();
+            }
+        });
+
     }
 
     private Uri getMedia(String mediaName) {
-        return Uri.parse("android.resource://" + getPackageName() + "/raw/" + mediaName);
+        if (URLUtil.isValidUrl(mediaName)) {
+            // if is a valid url
+            return Uri.parse(mediaName);
+        }
+        else {
+            return Uri.parse("android.resource://" + getPackageName() + "/raw/" + mediaName);
+        }
     }
 
     private void initializePlayer() {
-        Uri videoUri = getMedia(VIDEO_SAMPLE);
+        bufferingTextView.setVisibility(
+                VideoView.VISIBLE
+        );
+        Uri videoUri = getMedia(VIDEO_SAMPLE_LINK);
         videoView.setVideoURI(videoUri);
         videoView.start();
     }
